@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="80dp"
+    android:width="80dp"
+    android:viewportHeight="100" android:viewportWidth="100">
+    <path android:pathData="M 30,50 L 30,60 L 70,60 L 70,50"
+        android:strokeColor="@color/button_foreground"
+        android:strokeWidth="5"/>
+</vector>

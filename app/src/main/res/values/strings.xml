@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Editor\'s Keyboard</string>
+    <string name="service_label1">Editor\'s Keyboard (non-auxiliary)</string>
+    <string name="service_label2">Editor\'s Keyboard (auxiliary only)</string>
+    <string name="button_copy">COPY</string>
+    <string name="button_paste">PASTE</string>
+</resources>

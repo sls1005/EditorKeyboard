@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="100"
+    android:viewportHeight="101">
+  <group android:scaleX="0.56222224"
+      android:scaleY="0.56222224"
+      android:translateX="21.628601"
+      android:translateY="22.107779">
+      <path android:pathData="M 40,25 L 51,15 L 62,25 M 51,15 L 51,40 M 76,40 L 86,51 L 76,62 M 86,51 L 61,51 M 62,76 L 51,86 L 40,76 M 51,86 L 51,61 M 25,40 L 15,51 L 25,62 M 15,51 L 40,51"
+          android:strokeColor="@color/button_foreground"
+          android:strokeWidth="3"/>
+  </group>
+</vector>
