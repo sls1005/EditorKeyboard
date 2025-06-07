@@ -4,7 +4,7 @@ This is a keyboard for editing text on Android. It consists of arrow keys, space
 
 It is designed for editing any text precisely, such as by inserting a word, a sentence, or a paragraph into a specific position. The large arrow keys are designed to help you to easily navigate within the text.
 
-It is designed to deal with most situations, even some of the edge cases. Nonstandard text field? Context menu not showing? Just long press the `COPY` button and this keyboard will simulate a `Ctrl+C` (by sending the key event). If you don't long press it, but instead click it normally, this keyboard will try to copy the selected text to the clipboard without sending any key event, in case that some applications, for example, maybe a terminal app, interpret `Ctrl+C` differently. However, both methods might not work, in which case this can't help you, and you would need to use another keyboard.
+It is designed to deal with most situations, even some of the edge cases. Nonstandard text field? Context menu not shown? Just long press the `COPY` button and this keyboard will simulate a `Ctrl+C` (by sending the key event). If you don't long press it, but instead click it normally, this keyboard will try to copy the selected text to the clipboard without sending any key event, in case that some applications, for example, maybe a terminal app, interpret `Ctrl+C` differently. However, both methods might not work, in which case this can't help you, and you would need to use another keyboard.
 
 | Key | When clicked | When long pressed |
 | --- | ------------ | ----------------- |
