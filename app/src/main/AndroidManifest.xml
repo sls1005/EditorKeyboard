@@ -51,5 +51,77 @@
             <meta-data android:name="android.view.im"
                 android:resource="@xml/method_auxiliary"/>
         </service>
+        <service
+            android:name=".PlainTextEditorKeyboard"
+            android:label="@string/service_label3"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:permission="android.permission.BIND_INPUT_METHOD"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.view.InputMethod"/>
+            </intent-filter>
+            <meta-data android:name="android.view.im"
+                android:resource="@xml/method"/>
+        </service>
+        <service
+            android:name=".PlainTextAuxiliaryKeyboard"
+            android:label="@string/service_label4"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:permission="android.permission.BIND_INPUT_METHOD"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.view.InputMethod"/>
+            </intent-filter>
+            <meta-data android:name="android.view.im"
+                android:resource="@xml/method_auxiliary"/>
+        </service>
+        <service
+            android:name=".KeycodefirstEditorKeyboard"
+            android:label="@string/service_label5"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:permission="android.permission.BIND_INPUT_METHOD"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.view.InputMethod"/>
+            </intent-filter>
+            <meta-data android:name="android.view.im"
+                android:resource="@xml/method"/>
+        </service>
+        <service
+            android:name=".KeycodefirstAuxiliaryKeyboard"
+            android:label="@string/service_label6"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:permission="android.permission.BIND_INPUT_METHOD"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.view.InputMethod"/>
+            </intent-filter>
+            <meta-data android:name="android.view.im"
+                android:resource="@xml/method_auxiliary"/>
+        </service>
+        <service
+            android:name=".KeycodefirstPlainTextEditorKeyboard"
+            android:label="@string/service_label7"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:permission="android.permission.BIND_INPUT_METHOD"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.view.InputMethod"/>
+            </intent-filter>
+            <meta-data android:name="android.view.im"
+                android:resource="@xml/method"/>
+        </service>
+        <service
+            android:name=".KeycodefirstPlainTextAuxiliaryKeyboard"
+            android:label="@string/service_label8"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:permission="android.permission.BIND_INPUT_METHOD"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.view.InputMethod"/>
+            </intent-filter>
+            <meta-data android:name="android.view.im"
+                android:resource="@xml/method_auxiliary"/>
+        </service>
     </application>
 </manifest>

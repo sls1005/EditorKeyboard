@@ -48,7 +48,9 @@ class DocumentationActivity : ComponentActivity() {
                     Column(
                         modifier = Modifier.padding(innerPadding).verticalScroll(rememberScrollState())
                     ) {
-                        Text("The two keyboards provided by this application are generally same. The only difference is that the one marked as 'auxiliary' cannot be set as the default input method.\n\nYou typically only need to enable one of them. If both are enabled, the system may display both, but sometimes only the non-auxiliary one will be displayed.", fontSize = 20.sp, modifier = Modifier.padding(20.dp))
+                        Text("Keyboard Types", fontSize = 20.sp, fontWeight = FontWeight.Bold, modifier = Modifier.padding(10.dp))
+                        Text("This app provides similar but slightly different types of keyboards:\n\n    Auxiliary: cannot be set as the default input method; sometimes not shown in the keyboard-switching menu.\n\n    Non-auxiliary: \"normal\", not auxiliary keyboard; can be set as a default input method.\n\n    Plain-text mode: will only copy/paste as plain (non-rich) texts.\n\n    Keycode-first: will send keycodes by default. (i.e., will simulate a Ctrl-C when you short click the \"COPY\" button, even if Ctrl-C might not mean \"copy\" in the app you would be using.)\n\nEach can be enabled/disabled independently, but none of them can be used as a normal input method; they can only be used for editing, not inputting. The keyboard layouts are all same; only behaviors differ. You typically don't need all of them.\n", fontSize = 20.sp, modifier = Modifier.padding(20.dp))
+                        // The design is intended.
                         Text("About", fontSize = 20.sp, fontWeight = FontWeight.Bold, modifier = Modifier.padding(10.dp))
                         Text(
                             buildAnnotatedString {
