@@ -13,6 +13,7 @@ import android.view.KeyEvent.ACTION_UP
 import android.view.KeyEvent.FLAG_SOFT_KEYBOARD
 import android.view.KeyEvent.KEYCODE_C
 import android.view.KeyEvent.KEYCODE_V
+import android.view.KeyEvent.KEYCODE_Z
 import android.view.KeyEvent.KEYCODE_SPACE
 import android.view.KeyEvent.KEYCODE_TAB
 import android.view.KeyEvent.KEYCODE_DEL
@@ -127,6 +128,7 @@ open class EditorKeyboard : InputMethodService() {
                 R.id.button_right -> keyDownAndUp(KEYCODE_MOVE_END)
                 R.id.button_up -> keyDownAndUp(KEYCODE_PAGE_UP)
                 R.id.button_down -> keyDownAndUp(KEYCODE_PAGE_DOWN)
+                R.id.backspace_key -> ctrl(KEYCODE_Z)
                 else -> handleLongClickOnView(view.id)
             }
             (true)
@@ -159,7 +161,8 @@ open class EditorKeyboard : InputMethodService() {
                 R.id.button_up,
                 R.id.button_down,
                 R.id.button_left,
-                R.id.button_right
+                R.id.button_right,
+                R.id.backspace_key
             ).forEach { id ->
                 keyboard.findViewById<ImageButton>(id).setOnLongClickListener(longClickListener)
             }

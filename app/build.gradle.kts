@@ -14,8 +14,12 @@ android {
         applicationId = "test.sls1005.projects.editorskeyboard"
         minSdk = 21
         targetSdk = 35
-        versionCode = 2
-        versionName = "2.0"
+        versionCode = 3
+        versionName = "2.1"
+    }
+    androidResources {
+        generateLocaleConfig = true
+        localeFilters += arrayOf("en", "b+zh+Hans", "b+zh+Hant")
     }
     signingConfigs {
         register("release") {
@@ -64,11 +68,18 @@ dependencies {
     implementation(libs.aboutlibraries.compose.m3)
 }
 
-tasks.register<Copy>("Include license") {
-    include("LICENSE")
-    from("..")
-    into("src/main/assets/")
-}.also {
+arrayOf(
+    tasks.register<Copy>("Include license") {
+        include("LICENSE")
+        from("..")
+        into("src/main/assets/")
+    },
+    tasks.register<Copy>("Include English strings") {
+        include("strings.xml")
+        from("src/main/res/values")
+        into("src/main/res/values-en")
+    }
+).forEach {
     val task = it.get()
     afterEvaluate {
         tasks.named("preReleaseBuild") {

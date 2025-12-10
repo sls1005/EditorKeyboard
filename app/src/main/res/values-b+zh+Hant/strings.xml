@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">編者鍵盤</string>
+    <string name="service_label1">編者鍵盤 (non-auxiliary)</string>
+    <string name="service_label2">編者鍵盤 (auxiliary only)</string>
+    <string name="service_label3">編者鍵盤 (純文字模式, non-auxiliary)</string>
+    <string name="service_label4">編者鍵盤 (純文字模式, auxiliary only)</string>
+    <string name="service_label5">編者鍵盤 (keycode 優先, non-auxiliary)</string>
+    <string name="service_label6">編者鍵盤 (keycode 優先, auxiliary only)</string>
+    <string name="service_label7">編者鍵盤 (keycode 優先, 純文字模式, non-auxiliary)</string>
+    <string name="service_label8">編者鍵盤 (keycode 優先, 純文字模式, auxiliary only)</string>
+</resources>
