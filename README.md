@@ -6,6 +6,14 @@ It is designed for editing any text precisely, such as by inserting a word, a se
 
 It is designed to deal with most situations, even some of the edge cases. Nonstandard text field? Context menu not shown? Just long press the `COPY` button and this keyboard will simulate a `Ctrl+C` (by sending the key event). If you don't long press it, but instead click it normally, this keyboard will try to copy the selected text to the clipboard without sending any key event, in case that some applications, for example, maybe a terminal app, interpret `Ctrl+C` differently. However, both methods might not work, in which case this can't help you, and you would need to use another keyboard.
 
+### Screenshots
+
+![](screenshots/screenshot1.jpg)
+
+![](screenshots/screenshot2.jpg)
+
+### Details
+
 | Key | When clicked | When long pressed |
 | --- | ------------ | ----------------- |
 | Up arrow | Move the cursor up | Send the key event of the keycode of "Page Up" |
@@ -22,12 +30,6 @@ It is designed to deal with most situations, even some of the edge cases. Nonsta
 In addition, this app also provides a keycode-first mode, meaning that it will send a key event by default, but send the normal text on a long click, as if working in a reversed way; and a plain-text mode, meaning that all copied/pasted text will be in plain text; and a keycode-first plain-text mode, which combines these two behaviors; and "auxiliary" keyboards, meaning they cannot and will not be used as the default input method.
 
 As of version 2.0, this app provides eight different **input methods** that can be enabled/disabled independently. You typically only need to enable one of them, as the keyboard layouts are all same, only behaviors differ.
-
-### Screenshots
-
-![](screenshots/screenshot1.jpg)
-
-![](screenshots/screenshot2.jpg)
 
 ### Note
 
