@@ -33,6 +33,6 @@ As of version 2.0, this app provides eight different **input methods** that can 
 
 ### Note
 
-* Due to compatibility-related reasons, this app might keep targeting Android 15 for ever, but you can still use it on Android 16 or later (as long as you can still install it) as I do.
-
 * As of version 2.1, the keyboard will always simulate a Ctrl-Z (usually meaning "undo") when the backspace key is long pressed. It is not a bug.
+
+* Due to compatibility-related reasons, this app might keep targeting Android 15 for ever, but you can still use it on Android 16 or later (as long as you can still install it) as I do.
