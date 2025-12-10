@@ -14,6 +14,10 @@ It is designed to deal with most situations, even some of the edge cases. Nonsta
 | Right arrow | Move the cursor right | Send the key event of the keycode of "End" (move to the end of the line) |
 | Tab | Send the character of horizontal tab ('\t') | Send the key event of the keycode of the tab key of a keyboard |
 | Space | Send the character of space (' ') | Show the dialog for switching to another keyboard |
+| Backspace | Send the key event of a backspace key | Simulate Ctrl-Z (usually meaning "undo") |
+| Enter | Send the key event of the enter key | Same as a short click |
+| COPY | Copy the selected text (not using Ctrl-C) | Simulate Ctrl-C |
+| PASTE | Paste the text from clipboard (not using Ctrl-V) | Simulate Ctrl-V |
 
 In addition, this app also provides a keycode-first mode, meaning that it will send a key event by default, but send the normal text on a long click, as if working in a reversed way; and a plain-text mode, meaning that all copied/pasted text will be in plain text; and a keycode-first plain-text mode, which combines these two behaviors; and "auxiliary" keyboards, meaning they cannot and will not be used as the default input method.
 
@@ -28,3 +32,5 @@ As of version 2.0, this app provides eight different **input methods** that can 
 ### Note
 
 * Due to compatibility-related reasons, this app might keep targeting Android 15 for ever, but you can still use it on Android 16 or later (as long as you can still install it) as I do.
+
+* As of version 2.1, the keyboard will always simulate a Ctrl-Z (usually meaning "undo") when the backspace key is long pressed. It is not a bug.
