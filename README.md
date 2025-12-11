@@ -24,15 +24,17 @@ It is designed to deal with most situations, even some of the edge cases. Nonsta
 | Space | Send the character of space (' ') | Show the dialog for switching to another keyboard |
 | Backspace | Send the key event of a backspace key | Simulate Ctrl-Z (usually meaning "undo") |
 | Enter | Send the key event of the enter key | Same as a short click |
-| COPY | Copy the selected text (not using Ctrl-C) | Simulate Ctrl-C |
-| PASTE | Paste the text from clipboard (not using Ctrl-V) | Simulate Ctrl-V |
+| COPY | Take the selected text and put it into the clipboard (without using Ctrl-C; might not work in nonstandard input fields.) | Simulate Ctrl-C |
+| PASTE | Take the text from the clipboard and send it to the cursor position (without using Ctrl-V; might cause problems in highly specialized nonstandard input fields.) | Simulate Ctrl-V |
 
 In addition, this app also provides a keycode-first mode, meaning that it will send a key event by default, but send the normal text on a long click, as if working in a reversed way; and a plain-text mode, meaning that all copied/pasted text will be in plain text; and a keycode-first plain-text mode, which combines these two behaviors; and "auxiliary" keyboards, meaning they cannot and will not be used as the default input method.
 
-As of version 2.0, this app provides eight different **input methods** that can be enabled/disabled independently. You typically only need to enable one of them, as the keyboard layouts are all same, only behaviors differ.
+Starting from version 2.0, this app provides eight different **input methods** that can be enabled/disabled independently. You typically only need to enable one of them, as the keyboard layouts are all same, only behaviors differ.
 
 ### Note
 
-* As of version 2.1, the keyboard will always simulate a Ctrl-Z (usually meaning "undo") when the backspace key is long pressed. It is **not** a bug.
+* Starting from version 2.1, the keyboard will always simulate a Ctrl-Z (usually meaning "undo") when the backspace key is long pressed. It is **not** a bug.
+
+* The exact meanings of Ctrl-C, Ctrl-V and Ctrl-Z depend on the host app.
 
 * Due to compatibility-related reasons, this app might keep targeting Android 15 for ever, but you can still use it on Android 16 or later (as long as you can still install it) as I do.
